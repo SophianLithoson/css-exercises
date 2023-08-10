@@ -34,6 +34,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-basis: 42px;
 }
 
 .close-button {
@@ -50,6 +51,7 @@ body {
   border: 1px solid #eee;
   padding: 0;
   margin-left: auto;
+  flex-basis: 24px;
 }
 
 button {
@@ -70,9 +72,17 @@ button.cancel {
   color: royalblue;
 }
 
-.modal-body, .modal-body-top, .modal-body-buttons {
+.modal-body, .modal-body-top, .modal {
   display: flex;
   gap: 4px;
+}
+
+.modal-body {
+  flex-direction: column;
+}
+
+.modal-body-top, .modal-body-buttons {
+  flex-direction: row;
 }
 
 .header {
